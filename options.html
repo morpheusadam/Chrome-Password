@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Password Setup</title>
+   
+</head>
+
+<body>
+    <div class="card">
+        <header>
+            <h1>Chrome Password Setup</h1>
+            <p class="subtitle">Secure your browser with a password</p>
+        </header>
+
+        <p id="topnote"><i></i></p>
+
+        <section>
+            <h2>Initial Setup</h2>
+            <p class="subtitle">The browser will close after setup. You'll need to enter the password next time you open it.</p>
+
+            <div id="note" class="error" style="display: none;"></div>
+
+            <form id="passwordForm">
+                <div class="form-group">
+                    <label for="old">Enter password:</label>
+                    <input type="password" id="old" placeholder="Create a strong password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="new">Re-enter password:</label>
+                    <input type="password" id="new" placeholder="Confirm your password" required>
+                </div>
+
+                <div id="status"></div>
+                <button type="button" id="save" class="btn">Save Password</button>
+            </form>
+        </section>
+
+        <div class="divider"></div>
+
+        <footer>
+            <p style="text-align: center; color: #5f6368; font-size: 0.875rem;">
+                For your security, please choose a strong password and don't share it with others.
+            </p>
+        </footer>
+    </div>
+
+    <script src="options.js"></script>
+</body>
+
+</html>
