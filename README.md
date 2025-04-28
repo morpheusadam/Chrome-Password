@@ -1,6 +1,6 @@
 # ZAMO - Chrome Password Protector 🔒
 
-![ZAMO Logo](assets/logo.png) *(Consider adding a logo in your assets folder)*
+![ZAMO Logo](assets/icons/icon1.png) *(Consider adding a logo in your assets folder)*
 
 A lightweight Chrome extension that adds an extra layer of password protection to your browser, perfect for freelancers, families, and privacy-conscious users.
 
@@ -36,10 +36,10 @@ A lightweight Chrome extension that adds an extra layer of password protection t
 
 ## Screenshots 🖼️
 
-![Password Set Screen](assets/screenshot1.png)  
+![Password Set Screen](assets/set.png)  
 *Password setup interface*
 
-![Login Screen](assets/screenshot2.png)  
+![Login Screen](assets/login.png)  
 *Login prompt*
 
 ## Development 🛠️
