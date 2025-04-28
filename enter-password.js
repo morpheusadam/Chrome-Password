@@ -6,25 +6,21 @@ function save_options() {
     chrome.storage.local.get(['key'], (result) => {
         //console.log('Value retrieved:', result.key);
         var actual = result.key
-        var entered = document.getElementById('old')
-            .value;
+        var entered = document.getElementById('old').value;
 
-        if (entered == actual) {
-            chrome.runtime.sendMessage({
-                action: "removeListener"
-            }, (response) => {
+        if(entered == actual) {
+            chrome.runtime.sendMessage({ action: "removeListener" }, (response) => {
                 if (response.success) {
                     //console.log("Listener removed successfully.");
                 }
             });
-        } else {
-            document.getElementById('note')
-                .style.display = 'block';
-            document.getElementById('note')
-                .innerHTML = 'Invalid Password';
-        }
+         } 
+         else {
+            document.getElementById('note').style.display='block';
+            document.getElementById('note').innerHTML='Invalid Password';
+         }
     });
-
+  
 }
 
 

@@ -7,9 +7,9 @@
     "author": "eswar yaga",
     "short_name": "Chrome Lock",
     "icons": {
-        "16": "icon1.png",
-        "48": "icon1.png",
-        "128": "icon1.png"
+        "16": "assets/icons/icon1.png",
+        "48": "assets/icons/icon1.png",
+        "128": "assets/icons/icon1.png"
     },
     "background": {
         "service_worker": "bg.js"
@@ -18,5 +18,5 @@
         "storage",
         "tabs"
     ],
-    "options_page": "options.html"
+    "options_page": "set-password.html"
 }
