@@ -1,6 +1,6 @@
-# ZAMO - Chrome Password Protector 🔒
+#  - Chrome Password Protector 🔒
 
-![ZAMO Logo](assets/icons/icon1.png) *(Consider adding a logo in your assets folder)*
+![ Logo](assets/icons/icon1.png) *(Consider adding a logo in your assets folder)*
 
 A lightweight Chrome extension that adds an extra layer of password protection to your browser, perfect for freelancers, families, and privacy-conscious users.
 
@@ -16,7 +16,7 @@ A lightweight Chrome extension that adds an extra layer of password protection t
 
 ### Method 1: Chrome Web Store
 *(Once published)*  
-[![Available in the Chrome Web Store](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/zamo-password-protector/...)
+[![Available in the Chrome Web Store](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/password-protector/...)
 
 ### Method 2: Manual Installation
 1. Download or clone this repository
@@ -27,7 +27,7 @@ A lightweight Chrome extension that adds an extra layer of password protection t
 
 ## Usage 🚀
 
-1. After installation, click the ZAMO icon in your toolbar
+1. After installation, click the  icon in your toolbar
 2. Set your master password (remember this!)
 3. The password will be required when:
    - Opening a new Chrome window
