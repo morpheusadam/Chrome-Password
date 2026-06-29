@@ -1,104 +1,146 @@
-#  - Chrome Password Protector 🔒
+<div align="center">
 
-![ Logo](assets/icons/icon1.png) *(Consider adding a logo in your assets folder)*
+# 🔒 Chrome Lock — Password for Your Browser
 
-A lightweight Chrome extension that adds an extra layer of password protection to your browser, perfect for freelancers, families, and privacy-conscious users.
+### A lightweight Manifest V3 Chrome extension that asks for a password before anyone can use your browser — ideal for shared computers, workplaces and privacy.
 
-## Features ✨
-- 🔐 Set a master password for Chrome access
-- 🛡️ Prevents unauthorized browser access
-- ⚡ Lightweight and fast
-- 🌐 Works on all Chrome pages
-- 🔄 Easy password reset option
-- 🎨 Clean modern UI
+<p>
+  <img src="https://img.shields.io/github/license/morpheusadam/Chrome-Password?style=for-the-badge&color=4c1" alt="License" />
+  <img src="https://img.shields.io/github/stars/morpheusadam/Chrome-Password?style=for-the-badge&color=ffca28" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/morpheusadam/Chrome-Password?style=for-the-badge&color=42a5f5" alt="Forks" />
+  <img src="https://img.shields.io/github/last-commit/morpheusadam/Chrome-Password?style=for-the-badge&color=8e44ad" alt="Last commit" />
+  <img src="https://img.shields.io/github/repo-size/morpheusadam/Chrome-Password?style=for-the-badge&color=e67e22" alt="Repo size" />
+</p>
 
-## Installation ⚙️
+<p>
+  <img src="https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extension" />
+  <img src="https://img.shields.io/badge/Manifest-V3-34A853?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Manifest V3" />
+  <img src="https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/HTML5-Markup-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-Styles-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+</p>
 
-### Method 1: Chrome Web Store
-*(Once published)*  
-[![Available in the Chrome Web Store](https://storage.googleapis.com/web-dev-uploads/image/WlD8wC6g8khYWPJUsQceQkhXSlv1/UV4C4ybeBTsZt43U4xis.png)](https://chrome.google.com/webstore/detail/password-protector/...)
-
-### Method 2: Manual Installation
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions`
-3. Enable "Developer mode" (toggle in top right)
-4. Click "Load unpacked" and select the extension folder
-5. Pin the extension for easy access
-
-## Usage 🚀
-
-1. After installation, click the  icon in your toolbar
-2. Set your master password (remember this!)
-3. The password will be required when:
-   - Opening a new Chrome window
-   - After browser restart
-   - After 30 minutes of inactivity (configurable)
-
-## Screenshots 🖼️
-
-![Password Set Screen](assets/set.png)  
-*Password setup interface*
-
-![Login Screen](assets/login.png)  
-*Login prompt*
-
-## Development 🛠️
-
-### Project Structure
-/
-├── assets/ # Images and icons
-├── data/ # Data storage
-├── bg.js # Background script
-├── enter-password.html # Password entry UI
-├── enter-password.js # Password entry logic
-├── manifest.json # Extension manifest
-├── set-password.html # Password setup UI
-└── set-password.js # Password setup logic
-
-### Building
-This extension uses vanilla JS and doesn't require compilation. Just load the folder in Chrome.
-
-### Contributing
-Pull requests are welcome! For major changes, please open an issue first.
-
-## Security 🔒
-- Passwords are hashed using SHA-256 before storage
-- No external data collection
-- All processing happens locally
-
-## FAQ ❓
-
-**Q: What happens if I forget my password?**  
-A: You'll need to reinstall the extension (this is a security feature).
-
-**Q: Does this sync across devices?**  
-A: No, for security reasons the password is device-local.
-
-**Q: How is this different from Chrome's built-in password manager?**  
-A: This protects access to the entire browser, not just saved passwords.
-
-**Q: Can I change my password after setting it?**  
-A: Yes, you can change it anytime through the extension popup.
-
-**Q: Is my password stored securely?**  
-A: Yes, we only store a hashed version and never the plain text password.
-
-## Support 💖
-If you find this useful, please consider:
-- ⭐ Starring this repository
-- 🐛 Reporting issues
-- 💻 Contributing code
-- 📢 Sharing with your network
-
-## Roadmap 🗺️
-- [ ] Add biometric authentication support
-- [ ] Implement auto-lock timeout customization
-- [ ] Add password hint feature
-- [ ] Develop browser action quick menu
-
-## License 📄
-MIT License - [View License](LICENSE)
+</div>
 
 ---
 
-For support or feature requests, please open an issue in our [GitHub repository](https://github.com/morpheusadam/Chrome-Password-Protector-ZAMO-).
+## 📖 Overview
+
+**Chrome Lock** is a small, no-frills **Chrome browser extension** that puts a password gate in front of your browser. Once you set a password, the extension prompts for it whenever Chrome starts — until you enter the correct password, your open tabs are closed away and you can't browse. Type the right password and your previous tabs are restored, so you pick up right where you left off.
+
+It's built with **vanilla JavaScript** on **Chrome's Manifest V3** platform using a background **service worker** and `chrome.storage.local`. There's no build step, no framework, and no external servers — everything runs locally in the browser. It's a handy lightweight lock for **shared/family computers, workplace machines, and privacy-conscious users** who want a quick barrier against casual unauthorized access.
+
+> 🔎 **Keywords:** chrome extension, browser password, chrome lock, lock browser, browser security, manifest v3, password protection, shared computer, privacy extension, chrome startup password.
+
+> ⚠️ **Security note:** This extension is a lightweight deterrent. The password is stored in plain text in `chrome.storage.local` (it is **not** hashed or encrypted), and the lock is enforced in the UI layer. Use it to discourage casual access on shared machines — not as protection against a determined user or as a replacement for OS-level account passwords / disk encryption.
+
+---
+
+## ✨ Features
+
+- 🔐 **Set a browser password** — choose a master password from the setup page.
+- 🚪 **Lock on startup** — if a password is set, Chrome prompts for it every time it launches.
+- 🗂️ **Tab restore** — your open tabs are closed during lock and re-opened after you unlock.
+- ⌨️ **Press-Enter to unlock** — submit the password with the Enter key or the button.
+- 🪶 **Lightweight & local** — vanilla JS, no build tools, no external network calls.
+- 🧩 **Manifest V3** — modern Chrome extension with a background service worker.
+- 🔁 **Change anytime** — update your password from the extension's options page.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| --- | --- |
+| Platform | Chrome Extension — Manifest V3 |
+| Background | Service worker (`bg.js`) |
+| Storage | `chrome.storage.local` |
+| Permissions | `storage`, `tabs` |
+| UI | HTML + CSS + vanilla JavaScript |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- **Google Chrome** (or any Chromium-based browser that supports Manifest V3)
+
+### Installation (Load Unpacked)
+
+```bash
+# 1. Clone or download this repository
+git clone https://github.com/morpheusadam/Chrome-Password.git
+```
+
+1. Open Chrome and navigate to `chrome://extensions`.
+2. Enable **Developer mode** (toggle in the top-right corner).
+3. Click **Load unpacked** and select the project folder.
+4. Pin the extension for easy access.
+
+---
+
+## 📦 Usage
+
+1. After installing, the **set password** page opens automatically.
+2. Enter the same password in both fields to save it.
+3. From now on, when Chrome starts, the **enter password** page appears and your tabs are locked away.
+4. Type your password and press **Enter** (or click the button) to unlock and restore your tabs.
+5. To change the password, open the extension's **options page** and set a new one.
+
+> 💡 If you forget the password, remove and re-add the extension via `chrome://extensions` (this clears the stored password).
+
+---
+
+## 🗂️ Project Structure
+
+```text
+Chrome-Password/
+├── manifest.json          # MV3 manifest (permissions: storage, tabs)
+├── bg.js                  # service worker: lock/unlock + tab handling
+├── set-password.html      # password setup UI
+├── set-password.js        # saves the password to chrome.storage.local
+├── enter-password.html    # unlock prompt UI
+├── enter-password.js      # validates entry & releases the lock
+├── assets/                # icons, screenshots & styles
+│   ├── icons/
+│   └── style/
+└── data/verified_contents.json
+```
+
+---
+
+## 🔐 Permissions
+
+| Permission | Why it's needed |
+| --- | --- |
+| `storage` | Store and read the password (`chrome.storage.local`). |
+| `tabs` | Close tabs while locked and re-open them after unlocking. |
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Open an [issue](https://github.com/morpheusadam/Chrome-Password/issues) or submit a pull request. Security-hardening improvements — such as hashing the stored password or adding an idle auto-lock — are especially welcome.
+
+## 📜 License
+
+Distributed under the **MIT License** — see [`LICENSE`](LICENSE) for details (or the repository license, if present).
+
+---
+
+<div align="center">
+
+### 👤 Author — Morpheus Adam
+
+Web developer & cheerful hacker · PHP · Laravel · Go
+
+<p>
+  <a href="https://github.com/morpheusadam"><img src="https://img.shields.io/badge/GitHub-morpheusadam-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
+  <a href="https://sam.zeonic.me"><img src="https://img.shields.io/badge/Website-sam.zeonic.me-4c1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website" /></a>
+  <a href="mailto:morpheusadam95@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+</p>
+
+⭐ **If Chrome Lock helps keep your browser private, consider giving it a star!** ⭐
+
+</div>
