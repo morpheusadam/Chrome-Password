@@ -144,3 +144,20 @@ Web developer & cheerful hacker · PHP · Laravel · Go
 ⭐ **If Chrome Lock helps keep your browser private, consider giving it a star!** ⭐
 
 </div>
+
+
+---
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#morpheusadam/Chrome-Password&Date">
+  <img src="https://api.star-history.com/svg?repos=morpheusadam/Chrome-Password&type=Date" alt="Chrome-Password — Star History Chart" width="70%" />
+</a>
+
+<div align="center">
+
+### If this project helps you, please give it a ⭐
+
+A star helps other developers discover **Chrome-Password** and supports continued development.
+
+</div>
