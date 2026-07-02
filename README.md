@@ -1,7 +1,5 @@
 <div align="center">
-
 # 🔒 Chrome Lock — Password for Your Browser
-
 ### A lightweight Manifest V3 Chrome extension that asks for a password before anyone can use your browser — ideal for shared computers, workplaces and privacy.
 
 <p>
