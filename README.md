@@ -5,11 +5,11 @@
 ### A lightweight Manifest V3 Chrome extension that asks for a password before anyone can use your browser — ideal for shared computers, workplaces and privacy.
 
 <p>
-  <img src="https://img.shields.io/github/license/morpheusadam/Chrome-Password?style=for-the-badge&color=4c1" alt="License" />
-  <img src="https://img.shields.io/github/stars/morpheusadam/Chrome-Password?style=for-the-badge&color=ffca28" alt="Stars" />
-  <img src="https://img.shields.io/github/forks/morpheusadam/Chrome-Password?style=for-the-badge&color=42a5f5" alt="Forks" />
-  <img src="https://img.shields.io/github/last-commit/morpheusadam/Chrome-Password?style=for-the-badge&color=8e44ad" alt="Last commit" />
-  <img src="https://img.shields.io/github/repo-size/morpheusadam/Chrome-Password?style=for-the-badge&color=e67e22" alt="Repo size" />
+  <img src="https://img.shields.io/github/license/morpheusadam/ChromeLock?style=for-the-badge&color=4c1" alt="License" />
+  <img src="https://img.shields.io/github/stars/morpheusadam/ChromeLock?style=for-the-badge&color=ffca28" alt="Stars" />
+  <img src="https://img.shields.io/github/forks/morpheusadam/ChromeLock?style=for-the-badge&color=42a5f5" alt="Forks" />
+  <img src="https://img.shields.io/github/last-commit/morpheusadam/ChromeLock?style=for-the-badge&color=8e44ad" alt="Last commit" />
+  <img src="https://img.shields.io/github/repo-size/morpheusadam/ChromeLock?style=for-the-badge&color=e67e22" alt="Repo size" />
 </p>
 
 <p>
@@ -70,7 +70,7 @@ It's built with **vanilla JavaScript** on **Chrome's Manifest V3** platform usin
 
 ```bash
 # 1. Clone or download this repository
-git clone https://github.com/morpheusadam/Chrome-Password.git
+git clone https://github.com/morpheusadam/ChromeLock.git
 ```
 
 1. Open Chrome and navigate to `chrome://extensions`.
@@ -121,7 +121,7 @@ Chrome-Password/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Open an [issue](https://github.com/morpheusadam/Chrome-Password/issues) or submit a pull request. Security-hardening improvements — such as hashing the stored password or adding an idle auto-lock — are especially welcome.
+Contributions are welcome! Open an [issue](https://github.com/morpheusadam/ChromeLock/issues) or submit a pull request. Security-hardening improvements — such as hashing the stored password or adding an idle auto-lock — are especially welcome.
 
 ## 📜 License
 
@@ -150,8 +150,8 @@ Web developer & cheerful hacker · PHP · Laravel · Go
 
 ## ⭐ Star History
 
-<a href="https://star-history.com/#morpheusadam/Chrome-Password&Date">
-  <img src="https://api.star-history.com/svg?repos=morpheusadam/Chrome-Password&type=Date" alt="Chrome-Password — Star History Chart" width="70%" />
+<a href="https://star-history.com/#morpheusadam/ChromeLock&Date">
+  <img src="https://api.star-history.com/svg?repos=morpheusadam/ChromeLock&type=Date" alt="Chrome-Password — Star History Chart" width="70%" />
 </a>
 
 <div align="center">
